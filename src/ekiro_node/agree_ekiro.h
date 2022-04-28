@@ -10,6 +10,7 @@
 //Include message types
 #include "std_msgs/Int8.h"
 #include "std_msgs/Int64.h"
+#include "agree_map_pkg/msgmap.h"
 
 //Include threads
 #include <boost/thread/thread.hpp>
@@ -48,7 +49,9 @@ public:
   int64_t interim_ekiro_state;
   int64_t interim_ekiro_command;
 
-  void ROS_subscribe_callback(const std_msgs::Int64 msg);
+  int64_t interim_counter = 0;
+
+  void ROS_subscribe_callback(const agree_map_pkg::msgmap msg);
 
 private:
 

@@ -17,7 +17,7 @@ int main(int argc, char **argv)
   ros::MultiThreadedSpinner spinner(0);
 
   // Create subscriber
-  ros::Subscriber agree_ekiro_subscriber = n.subscribe("agree_ekiro_status", 1000, &agree_ekiro_class::ROS_subscribe_callback, &agree_ekiro);
+  ros::Subscriber agree_ekiro_subscriber = n.subscribe("map_module/status", 1000, &agree_ekiro_class::ROS_subscribe_callback, &agree_ekiro);
 
   spinner.spin();
 

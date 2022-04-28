@@ -6,5 +6,5 @@ message(STATUS "Example application, ${THIS_APP_NAME}, is ready to build")
 
 add_executable(${THIS_APP_NAME} ${THIS_APP_SOURCES} ${THIS_APP_HEADERS})
 target_link_libraries(${THIS_APP_NAME} ${catkin_LIBRARIES})
-
+add_dependencies(${THIS_APP_NAME} ${catkin_EXPORTED_TARGETS})
 install(TARGETS ${THIS_APP_NAME} DESTINATION ./bin)

@@ -10,7 +10,7 @@
 //Include message types
 #include "std_msgs/Int8.h"
 #include "std_msgs/Int64.h"
-#include "agree_map_pkg/msgmap.h"
+#include "agree_ekiro_pkg/msgeKiro.h"
 
 //Include threads
 #include <boost/thread/thread.hpp>
@@ -51,7 +51,7 @@ public:
 
   int64_t interim_counter = 0;
 
-  void ROS_subscribe_callback(const agree_map_pkg::msgmap msg);
+  void ROS_subscribe_callback(const agree_ekiro_pkg::msgeKiro msg);
 
 private:
 

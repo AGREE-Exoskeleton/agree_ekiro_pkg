@@ -128,7 +128,7 @@ void agree_ekiro_class::ROS_keyboard_thread(){
 }
 
 
-void agree_ekiro_class::ROS_subscribe_callback(const agree_map_pkg::msgmap msg)
+void agree_ekiro_class::ROS_subscribe_callback(const agree_ekiro_pkg::msgeKiro msg)
 {
   //Display data.
   ROS_WARN_STREAM("Callback eKiro status");
